@@ -1,0 +1,28 @@
+.wrapper {
+    width: 50%;
+    border: 1px solid black;
+    min-width: 400px;
+    position: relative;
+    padding: 15px;
+}
+
+input[type="text"] {
+    position: absolute;
+    right: 10%;
+    padding: 0;
+}
+
+label,
+input[type="text"] {
+    line-height: 23px
+}
+
+input[type="submit"] {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.form__wrap_btn {
+    text-align: center;
+    margin-top: 15px;
+}
