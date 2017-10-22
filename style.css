@@ -14,7 +14,7 @@ input[type="text"] {
 
 label,
 input[type="text"] {
-    line-height: 23px
+    line-height: 23px;
 }
 
 input[type="submit"] {
@@ -25,4 +25,11 @@ input[type="submit"] {
 .form__wrap_btn {
     text-align: center;
     margin-top: 15px;
+}
+
+.error {  
+    color: red;
+}
+.success{
+    color: green;
 }

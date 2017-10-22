@@ -15,12 +15,14 @@
             <div class="form__wrap">
                 <h4>Dane Klienta</h4>
 
-                <label for="k_imie">Imie: </label> <input type="text" value="" name="k_imie"><br>
-                <label for="k_nazwisko">Nazwisko: </label> <input type="text" name="k_nazwisko"><br>
-                <label for="k_miasto">Miasto: </label> <input type="text" name="k_miasto"><br>
-                <label for="k_kod">Kod pocztowy: </label> <input type="text" name="k_kod-pocz"><br>
+                <label for="k_imie">Imie: </label> <input  maxlength='40' type="text" value="" name="k_imie">
+                <br>
+                <label for="k_nazwisko">Nazwisko: </label> <input maxlength='40'type="text" name="k_nazwisko">
+                <br>
+                <label for="k_miasto">Miasto: </label> <input maxlength='40' type="text" name="k_miasto"><br>
+                <label for="k_kod">Kod pocztowy: </label> <input maxlength='6'type="text" name="k_kod"><br>
 
-                <label for="k_ulica">Ulica: </label> <input type="text" name="k_ulica"></div>
+                <label for="k_ulica">Ulica: </label> <input maxlength='40' type="text" name="k_ulica"></div>
 
 
 
@@ -29,11 +31,16 @@
 
             <div class="form__wrap">
                 <h4>Dane Firmy</h4>
-                <label for="f_nazwa">Nazwa: </label> <input type="text" name="f_nazwa"><br>
-                <label for="f_ulica">Miasto: </label> <input type="text" name="f_ulica"><br>
-                <label for="f_miasto">Kod pocztowy: </label><input type="text" name="f_miasto"><br>
-                <label for="f_kod">Ulica: </label> <input type="text" name="f_kod-pocz"><br>
-                <label for="f_NIP">NIP: </label> <input type="text" name="f_NIP">
+                
+                <label for="f_nazwa">Nazwa: </label> <input maxlength='40' type="text" name="f_nazwa">
+                <br>
+                <label for="f_ulica">Ulica: </label> <input maxlength='40' type="text" name="f_ulica">
+                <br>
+                <label for="f_miasto">Miasto: </label><input maxlength='40' type="text" name="f_miasto">
+                <br>
+                <label for="f_kod">Kod Pocztowy: </label> <input maxlength='6'type="text" name="f_kod-pocz">
+                <br>
+                <label for="f_NIP">NIP: </label> <input maxlength='10' type="text" name="f_NIP">
             </div>
 
 
@@ -59,59 +66,12 @@
 
     </div>
     <br>
-    <!--  FORM 2    -->
-    <div class="wrapper">
-        <form id="form-2" action="">
-            <h3>Formularz zgłoszeniowy</h3>
-            <div class="form__wrap">
-                <h4>Dane Klienta</h4>
+   
 
-                <label for="k_imie">Imie: </label> <input type="text" value="" name="k_imie"><br>
-                <label for="k_nazwisko">Nazwisko: </label> <input type="text" name="k_nazwisko"><br>
-                <label for="k_miasto">Miasto: </label> <input type="text" name="k_miasto"><br>
-                <label for="k_kod">Kod pocztowy: </label> <input type="text" name="k_kod-pocz"><br>
-
-                <label for="k_ulica">Ulica: </label> <input type="text" name="k_ulica"></div>
-
-
-
-
-
-
-            <div class="form__wrap">
-                <h4>Dane Firmy</h4>
-                <label for="f_nazwa">Nazwa: </label> <input type="text" name="f_nazwa"><br>
-                <label for="f_ulica">Miasto: </label> <input type="text" name="f_ulica"><br>
-                <label for="f_miasto">Kod pocztowy: </label><input type="text" name="f_miasto"><br>
-                <label for="f_kod">Ulica: </label> <input type="text" name="f_kod-pocz"><br>
-                <label for="f_NIP">NIP: </label> <input type="text" name="f_NIP">
-            </div>
-
-
-
-
-
-            <div class="form__wrap">
-                <h4>Dane Zamowienia</h4>
-                <label for="z_kwota">Kwota: </label> <input type="text" name="z_kwota"><br>
-                <label for="z_stan">Stan Zamówienia: </label><br>
-                <label for="z_stan">Wystawiona</label><input type="radio" name="z_stan" value="w">
-                <label for="z_stan">Doręcznona</label><input type="radio" name="z_stan" value="d">
-                <label for="z_stan">Opłacona</label><input type="radio" name="z_stan" value="o">
-                <label for="z_stan">Spóźniona</label><input type="radio" name="z_stan" value="s"><br>
-                <label for="z_zapis">Zapisany: </label><input type="text" name="z_zapis">
-
-
-            </div>
-            <div class="form__wrap_btn">
-                <input type="submit" name="submit" value="Wyślij">
-            </div>
-        </form>
-
-    </div>
-
+  
 
     <script src="script.js"></script>
+    <script src="checkErr.js"></script>
 
 </body>
 
