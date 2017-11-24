@@ -118,8 +118,12 @@ class FormSaver {
 }
 
 
-
-if ('localStorage' in window) {
+(function init(){
+    
+    if ('localStorage' in window) {
     let formToSave1 = new FormSaver(document.querySelector('#form-1'));
   
 }
+    
+})();
+
